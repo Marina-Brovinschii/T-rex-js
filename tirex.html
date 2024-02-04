@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game JS</title>
+    <style>
+        #m div {
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgb(66,64,64);
+            float: left;
+        }
+        #m .t-rex {
+            background-image: url(T-Rex-3d-icon.png);
+        }
+        #m .t-rex.right {
+            transform: scaleX(-1);
+        }
+        #m .t-rex.left {
+            transform: scaleX(1);
+        }
+        #m .cactus {
+            background-image: url(Cactus-3d-icon.png);
+        }
+    </style>
+</head>
+<body onkeydown="action()">
+    
+    <div id="m"></div>
+
+    <script src="tirex.js"></script>
+</body>
+</html>
